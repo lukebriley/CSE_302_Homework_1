@@ -13,6 +13,36 @@ int AUList::GetLength() const {
   return length;
 }
 
+int AUList::GetRange() {
+  int minValue = ListItems[0];
+  for (int i = 1; i <= minValue; i++) {
+    if (ListItems[i] < ListItems[0]) {
+      minValue = ListItems[i];
+    }
+  }
+
+  int maxValue = ListItems[0];
+  for (int i = 1; i >= maxValue; i++) {
+    if (ListItems[i] > ListItems[0]) {
+      maxValue = ListItems[i];
+    }
+  }
+
+  int range = maxValue - minValue;
+  return range;
+};
+
+int AUList::GetMax() {
+
+  int maxValue = ListItems[0];
+  for (int i = 1; i >= maxValue; i++) {
+    if (ListItems[i] > ListItems[0]) {
+      maxValue = ListItems[i];
+    }
+  }
+  return maxValue;
+};
+
 int AUList::GetMin() {
 
   int minValue = ListItems[0];

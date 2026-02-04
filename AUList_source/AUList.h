@@ -12,7 +12,9 @@ public:
   bool IsFull() const; //Determines whether list is full. (Precondition -- list has been initialized).  Return value of "True" indicates class is full.
   
   int GetLength() const; //Determines the number of elements in list.
-  int GetMin();
+
+  int GetMin(); // Gets and returns the minimum value of the list
+  int GetMax();
 
   int GetItem(int); //Retrieves position of list element matching input item (if present).  If not present, -1 is returned.
 
@@ -25,6 +27,8 @@ public:
   void PrintList();  //Print all elements of the list in a readable format.
   
   int GetNextItem(); //Gets the next element in the list.
+
+  int GetRange(); // Gets and returns the range of the list (Max value - Min value)
     
 
 private:
