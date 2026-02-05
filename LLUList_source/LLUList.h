@@ -24,7 +24,8 @@ public:
   void ResetList();  //Initializes iterator's current position for an iteration through the list.
   
   void PrintList();  //Print all elements of the list in a readable format.
-  int getMin();
+
+  int getMin(); //Gets minimum value of the list
 
   int GetNextItem(); //Gets the next element in the list.  
 

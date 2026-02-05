@@ -122,10 +122,18 @@ void LLUList::PrintList() {
   std::cout<<")"<<std::endl;
 }
 
-
 int LLUList::getMin() {
-  LNode* minVal = ListStart;
+  int minValue = ListStart->item;
+  LNode* current = ListStart->next;
 
+  while (current != NULL) {
+    if (current->item < minValue) {
+      minValue = current->item;
+    }
+    current = current->next;
+  }
+
+  return minValue;
 }
 
 
