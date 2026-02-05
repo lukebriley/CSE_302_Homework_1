@@ -122,7 +122,7 @@ void LLUList::PrintList() {
   std::cout<<")"<<std::endl;
 }
 
-int LLUList::GetMin() {
+int LLUList::getMin() {
   int minValue = ListStart->item;
   LNode* current = ListStart->next;
 
@@ -136,7 +136,7 @@ int LLUList::GetMin() {
   return minValue;
 }
 
-int LLUList::GetMax() {
+int LLUList::getMax() {
   int maxValue = ListStart->item;
   LNode* current = ListStart->next;
 
@@ -149,9 +149,9 @@ int LLUList::GetMax() {
   return maxValue;
 }
 
-int LLUList::GetRange() {
-  int max = GetMax();
-  int min = GetMin();
+int LLUList::getRange() {
+  int max = getMax();
+  int min = getMin();
 
   const int range = max - min;
   return range;

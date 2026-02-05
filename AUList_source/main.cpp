@@ -22,12 +22,12 @@ int main(int argc, char** argv) {
 	std::cout<<"Index of value 80: "<<TestList.GetItem(80)<<std::endl;
 	std::cout<<"Index of value 25: "<<TestList.GetItem(25)<<std::endl;
 
-	std::cout<<"The Minimum Value is: "<<TestList.GetMin()<<std::endl;
+	std::cout<<"The Minimum Value is: "<<TestList.getMin()<<std::endl;
 	TestList.PrintList();
 	std::cout<<"The Maximum Value is: "<<TestList.GetMax()<<std::endl;
 	TestList.PrintList();
 
-	std::cout<<"The Range Value is: "<<TestList.GetRange()<<std::endl;
+	std::cout<<"The Range Value is: "<<TestList.getRange()<<std::endl;
 	TestList.PrintList();
 
 	AUList dupList = TestList.DuplicateSE(1, 3);

@@ -25,10 +25,10 @@ public:
   
   void PrintList();  //Print all elements of the list in a readable format.
 
-  int GetMin(); //Gets minimum value of the list.
-  int GetMax(); //Gets maximum value of the list
+  int getMin(); //Gets minimum value of the list.
+  int getMax(); //Gets maximum value of the list
 
-  int GetRange(); // Gets the range of the list.
+  int getRange(); // Gets the range of the list.
 
   int GetNextItem(); //Gets the next element in the list.  
 

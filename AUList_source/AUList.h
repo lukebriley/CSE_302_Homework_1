@@ -13,7 +13,7 @@ public:
   
   int GetLength() const; //Determines the number of elements in list.
 
-  int GetMin(); // Gets and returns the minimum value of the list
+  int getMin(); // Gets and returns the minimum value of the list
   int GetMax();
 
   int GetItem(int); //Retrieves position of list element matching input item (if present).  If not present, -1 is returned.
@@ -28,7 +28,7 @@ public:
   
   int GetNextItem(); //Gets the next element in the list.
 
-  int GetRange(); // Gets and returns the range of the list (Max value - Min value)
+  int getRange(); // Gets and returns the range of the list (Max value - Min value)
 
   AUList DuplicateSE(int first, int last); //Duplicates a range of the list and stores values in new list
 

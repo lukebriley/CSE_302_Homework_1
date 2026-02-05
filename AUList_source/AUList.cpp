@@ -13,9 +13,9 @@ int AUList::GetLength() const {
   return length;
 }
 
-int AUList::GetRange() {
+int AUList::getRange() {
   int max = GetMax();
-  int min = GetMin();
+  int min = getMin();
   int range = max - min;
   return range;
 };
@@ -31,7 +31,7 @@ int AUList::GetMax() {
   return maxValue;
 };
 
-int AUList::GetMin() {
+int AUList::getMin() {
 
   int minValue = ListItems[0];
   for (int i = 1; i <= minValue; i++) {
