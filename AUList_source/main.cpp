@@ -37,8 +37,5 @@ int main(int argc, char** argv) {
 	TestList.MakeEmpty();
 	std::cout<<"List after 'MakeEmpty': ";
 	TestList.PrintList();
-
-
-
 	return 0;
 }

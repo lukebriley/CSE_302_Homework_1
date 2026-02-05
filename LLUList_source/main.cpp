@@ -34,7 +34,8 @@ int main(int argc, char** argv) {
 
 	TestList.MakeEmpty();
 	std::cout<<"List after 'MakeEmpty': ";
-	TestList.PrintList();	
+	TestList.PrintList();
+
 	TestList.ResetList();
 	try {	
 		TestList.GetNextItem();
