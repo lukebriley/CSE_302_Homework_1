@@ -14,21 +14,9 @@ int AUList::GetLength() const {
 }
 
 int AUList::GetRange() {
-  int minValue = ListItems[0];
-  for (int i = 1; i <= minValue; i++) {
-    if (ListItems[i] < ListItems[0]) {
-      minValue = ListItems[i];
-    }
-  }
-
-  int maxValue = ListItems[0];
-  for (int i = 1; i >= maxValue; i++) {
-    if (ListItems[i] > ListItems[0]) {
-      maxValue = ListItems[i];
-    }
-  }
-
-  int range = maxValue - minValue;
+  int max = GetMax();
+  int min = GetMin();
+  int range = max - min;
   return range;
 };
 
@@ -99,5 +87,12 @@ void AUList::PrintList() { //simple function to print a list's items in stored o
   	  std::cout<<", ";
   }
   std::cout<<")"<<std::endl;
+}
+
+int AUList::DuplicateSE(int first, int last) {
+  int dupList = ListItems[first];
+  for (int i = 1; ListItems[last]; i++) {
+  }
+  return dupList;
 }
 

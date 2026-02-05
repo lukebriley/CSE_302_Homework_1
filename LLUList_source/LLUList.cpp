@@ -136,6 +136,27 @@ int LLUList::getMin() {
   return minValue;
 }
 
+int LLUList::getMax() {
+  int maxValue = ListStart->item;
+  LNode* current = ListStart->next;
+
+  while (current != NULL) {
+    if (current->item >= maxValue) {
+      maxValue = current->item;
+    }
+    current = current->next;
+  }
+  return maxValue;
+}
+
+int LLUList::getRange() {
+  int max = getMax();
+  int min = getMin();
+
+  const int range = max - min;
+  return range;
+}
+
 
 
 

@@ -30,9 +30,13 @@ int main(int argc, char** argv) {
 	std::cout<<"The Range Value is: "<<TestList.GetRange()<<std::endl;
 	TestList.PrintList();
 
+	std::cout<<"Here is a duplicate list: "<<TestList.DuplicateSE(10, 100)<<std::endl;
+
 	TestList.MakeEmpty();
 	std::cout<<"List after 'MakeEmpty': ";
 	TestList.PrintList();
+
+
 
 	return 0;
 }

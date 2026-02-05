@@ -27,6 +27,10 @@ int main(int argc, char** argv) {
 	std::cout<<"Index of value 25: "<<TestList.GetItem(25)<<std::endl;
 
 	std::cout<<"Minimum Value in List: "<<TestList.getMin()<<std::endl;
+	std::cout<<"Maximum Value in List: "<<TestList.getMax()<<std::endl;
+	TestList.PrintList();
+
+	std::cout<<"The range of the list is: "<<TestList.getRange()<<std::endl;
 
 	TestList.MakeEmpty();
 	std::cout<<"List after 'MakeEmpty': ";

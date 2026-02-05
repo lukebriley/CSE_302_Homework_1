@@ -29,6 +29,8 @@ public:
   int GetNextItem(); //Gets the next element in the list.
 
   int GetRange(); // Gets and returns the range of the list (Max value - Min value)
+
+  int DuplicateSE(int first, int last); //Duplicates list and stores values in new list
     
 
 private:
