@@ -89,10 +89,11 @@ void AUList::PrintList() { //simple function to print a list's items in stored o
   std::cout<<")"<<std::endl;
 }
 
-int AUList::DuplicateSE(int first, int last) {
-  int dupList = ListItems[first];
-  for (int i = 1; ListItems[last]; i++) {
+AUList AUList::DuplicateSE(int first, int last) {
+  AUList newList;
+  for (int i = first; i <= last; i++) {
+    newList.PutItem(ListItems[i]);
   }
-  return dupList;
+  return newList;
 }
 
